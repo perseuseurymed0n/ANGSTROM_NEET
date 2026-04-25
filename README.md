@@ -4,9 +4,11 @@
 NOTE: Only Browsers that Support File System Access API. E.g. Chrome, Edge, Brave etc. Brave users need to turn it on manually as it is turned off default.
 ---
 ### 1. Easiest Way: Use the Deployed GitHub Page
-Just click this link and start using the app instantly:
+Just click this link:https://perseuseurymed0n.github.io/ANGSTROM_NEET/ and start using the app instantly:
  Open Angstrom NEET Mistake Journal
-Create a DEDICATED Folder of your choice and LINK the html file with it (Go to settings and click it)
+Create a DEDICATED Folder of your choice in your own PC (say, "Anatom-Folder") and LINK the html file with it (Go to settings in the website above and click it through the folder option as illustrated below)
+<img width="531" height="608" alt="image" src="https://github.com/user-attachments/assets/2ac06623-6161-4dfc-983c-ce2b8094c5e8" />
+
 <img width="1000" height="935" alt="Screenshot from 2026-04-25 09-00-40" src="https://github.com/user-attachments/assets/aafd6c7c-822d-41f5-82fc-7bd71fa039a2" />
 
 (Replace with your actual GitHub Pages link after enabling it)
@@ -22,7 +24,9 @@ Click on the file anatom_fixed.html (or angstrom.html)
 Click the "Download raw file" button (or right-click → Save As)
 Save the file anywhere on your device (e.g., Desktop or NEET folder)
 Double-click the downloaded .html file
-Create a DEDICATED Folder of your choice and LINK the html file with it 
+Create a DEDICATED Folder of your choice in your own PC (say, "Anatom-Folder") and LINK the html file with it (Go to settings in the website above and click it through the folder option as illustrated below)
+<img width="531" height="608" alt="image" src="https://github.com/user-attachments/assets/2ac06623-6161-4dfc-983c-ce2b8094c5e8" />
+
 <img width="1000" height="935" alt="Screenshot from 2026-04-25 09-00-40" src="https://github.com/user-attachments/assets/d73b5bc1-ca63-4464-a1f7-2a17e0388281" />
 
 It will open in your default browser and work 100% offline.
