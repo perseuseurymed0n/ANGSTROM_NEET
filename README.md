@@ -3,7 +3,7 @@
 > **No account. No server. No internet required after loading. Everything stays on your device.**
 NOTE: Only Browsers that Support File System Access API. E.g. Chrome, Edge, Brave etc. Brave users need to turn it on manually as it is turned off default.
 ---
-1. Easiest Way: Use the Deployed GitHub Page
+### 1. Easiest Way: Use the Deployed GitHub Page
 Just click this link and start using the app instantly:
  Open Angstrom NEET Mistake Journal
 Create a DEDICATED Folder of your choice and LINK the html file with it (Go to settings and click it)
@@ -14,7 +14,7 @@ No installation. No download. Works directly in your browser.
 
 **IMPORTANT**: Make sure to link to a device folder for the BEST efficiency. Otherwise, the applet DEFAULTS to using JSON for images which is storage heavy!
 
-2. Run Completely Offline (Download HTML File)
+### 2. Run Completely Offline (Download HTML File)
 If you want to use the app without internet or prefer to keep everything local:
 
 Go to the GitHub repository
