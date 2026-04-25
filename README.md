@@ -7,7 +7,8 @@ NOTE: Only Browsers that Support File System Access API. E.g. Chrome, Edge, Brav
 Just click this link and start using the app instantly:
  Open Angstrom NEET Mistake Journal
 Create a DEDICATED Folder of your choice and LINK the html file with it (Go to settings and click it)
-<img width="1000" height="935" alt="image" src="https://github.com/user-attachments/assets/692d4d7b-30df-4c11-a96a-bd701366e8b3" />
+<img width="1000" height="935" alt="Screenshot from 2026-04-25 09-00-40" src="https://github.com/user-attachments/assets/aafd6c7c-822d-41f5-82fc-7bd71fa039a2" />
+
 (Replace with your actual GitHub Pages link after enabling it)
 No installation. No download. Works directly in your browser.
 
@@ -22,7 +23,7 @@ Click the "Download raw file" button (or right-click → Save As)
 Save the file anywhere on your device (e.g., Desktop or NEET folder)
 Double-click the downloaded .html file
 Create a DEDICATED Folder of your choice and LINK the html file with it 
-<img width="1000" height="935" alt="image" src="https://github.com/user-attachments/assets/692d4d7b-30df-4c11-a96a-bd701366e8b3" />
+<img width="1000" height="935" alt="Screenshot from 2026-04-25 09-00-40" src="https://github.com/user-attachments/assets/d73b5bc1-ca63-4464-a1f7-2a17e0388281" />
 
 It will open in your default browser and work 100% offline.
 Tip: Create a shortcut on your desktop for quick access.
