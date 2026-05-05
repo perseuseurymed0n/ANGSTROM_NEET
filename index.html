@@ -1357,6 +1357,13 @@
       </svg>
       Search Log
     </div>
+    <div class="nav-item" id="starred-nav-item" onclick="navigate('starred', this)">
+      <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <polygon points="8,1.5 10,6 15,6 11,9.5 12.5,14.5 8,11.5 3.5,14.5 5,9.5 1,6 6,6"/>
+      </svg>
+      Starred
+      <span class="nav-badge" id="starred-badge" style="background:var(--gold);display:none">0</span>
+    </div>
     <div class="nav-item" onclick="navigate('analytics', this)">
       <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
         <path d="M2 13L6 7l3 4 3-6 2 2"/>
@@ -1755,6 +1762,31 @@
       <div class="questions-list" id="questions-list"></div>
     </div>
 
+    <!-- STARRED -->
+    <div class="page" id="page-starred">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--text)">★ Starred Questions</div>
+          <div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px">Questions you've marked as important for quick access</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <select class="filter-select" id="sf-subject" onchange="renderStarredPage()">
+            <option value="">All Subjects</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+          </select>
+          <select class="filter-select" id="sf-sort" onchange="renderStarredPage()">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="difficulty-high">Difficulty ↓</option>
+          </select>
+        </div>
+      </div>
+      <div id="starred-count" style="font-size:0.75rem;color:var(--text3);margin-bottom:14px;font-family:'JetBrains Mono',monospace;"></div>
+      <div class="questions-list" id="starred-list"></div>
+    </div>
+
     <!-- ANALYTICS -->
     <div class="page" id="page-analytics">
       <div class="analytics-grid">
@@ -2026,6 +2058,7 @@
     <div class="qview-meta-grid" id="qview-meta"></div>
     <div class="qview-actions">
       <button class="btn btn-ghost" id="qview-delete-btn" onclick="qviewDelete()">Delete</button>
+      <button class="btn btn-ghost" id="qview-star-btn" onclick="qviewToggleStar()" style="color:var(--gold2);border-color:rgba(201,168,76,0.35)">☆ Star</button>
       <button class="btn btn-ghost" onclick="qviewEdit()" style="color:var(--gold2);border-color:rgba(201,168,76,0.35)">✎ Edit</button>
       <button class="btn btn-ghost" onclick="openExportQuestionModal()" style="color:#5aad7a;border-color:rgba(90,173,122,0.35)">⬇ Export Image</button>
       <button class="btn btn-primary" onclick="closeQView()">Close</button>
@@ -3338,7 +3371,10 @@ function filterQuestions() {
       </div>
       <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px" onclick="event.stopPropagation()">
         <div class="q-date">${q.dateAdded}</div>
-        <button class="btn btn-ghost" style="padding:4px 10px;font-size:0.72rem" onclick="openDeleteModal('${q.id}')">Delete</button>
+        <div style="display:flex;gap:6px">
+          <button class="btn btn-ghost" style="padding:4px 8px;font-size:0.8rem;color:${q.starred?'var(--gold2)':'var(--text3)'};border-color:${q.starred?'rgba(201,168,76,0.5)':'var(--border)'}" onclick="toggleStarQuestion('${q.id}')" title="${q.starred?'Unstar':'Star'} question">${q.starred?'★':'☆'}</button>
+          <button class="btn btn-ghost" style="padding:4px 10px;font-size:0.72rem" onclick="openDeleteModal('${q.id}')">Delete</button>
+        </div>
       </div>
     </div>
   `}).join('');
@@ -4229,12 +4265,32 @@ function renderOptionsList() {
           <textarea class="option-text-input" rows="1"
             placeholder="${o.type==='latex' ? 'e.g. $\\\\frac{1}{2}mv^2$' : 'Option text…'}"
             oninput="optTextChange('${o.id}',this.value);this.style.height='auto';this.style.height=this.scrollHeight+'px'"
+            onkeydown="optTextKeyDown(event,'${o.id}')"
           >${o.text}</textarea>
         `}
       </div>
       <button class="opt-remove-btn" onclick="optRemove('${o.id}')" title="Remove option">✕</button>
     </div>`;
   }).join('');
+}
+
+function optTextKeyDown(e, optId) {
+  const pairs = { '$':'$', '(':')', '{':'}' };
+  if(pairs[e.key]) {
+    const ta = e.target;
+    const start = ta.selectionStart;
+    const end = ta.selectionEnd;
+    const selected = ta.value.substring(start, end);
+    e.preventDefault();
+    const open = e.key;
+    const close = pairs[open];
+    const before = ta.value.substring(0, start);
+    const after = ta.value.substring(end);
+    ta.value = before + open + selected + close + after;
+    const pos = start + 1 + selected.length;
+    ta.setSelectionRange(pos, pos);
+    optTextChange(optId, ta.value);
+  }
 }
 
 async function optResolveImagesForSave(opts) {
@@ -5244,12 +5300,12 @@ async function runExportQuestion() {
           if(S.optLblCircle) {
             return `<div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:${S.optBg(isC)};border:${S.optBorder(isC)};border-radius:8px">
               <span style="width:22px;height:22px;border-radius:50%;background:${S.optLblCircleBg(isC)};color:${S.optLblColor(isC)};display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;font-family:monospace">${lbl}</span>
-              <span style="color:${S.optBodyColor};font-size:13.5px;line-height:1.5;padding-top:2px">${inner}</span>
+              <span data-opt-math style="color:${S.optBodyColor};font-size:13.5px;line-height:1.5;padding-top:2px">${inner}</span>
             </div>`;
           } else {
             return `<div style="display:flex;align-items:flex-start;gap:10px;padding:7px 10px;background:${S.optBg(isC)};border:${S.optBorder(isC)};border-radius:4px;font-family:${S.font};font-size:14px;line-height:1.6">
               <span style="min-width:26px;font-weight:600;color:${S.optLblColor(isC)};font-family:monospace">${lbl}</span>
-              <span style="color:${S.optBodyColor}">${inner}</span>
+              <span data-opt-math style="color:${S.optBodyColor}">${inner}</span>
             </div>`;
           }
         }).join('') + '</div>';
@@ -5316,14 +5372,17 @@ async function runExportQuestion() {
       new Promise(res => { img.onload = res; img.onerror = res; })
     ));
 
-    // ── Run MathJax on the question text ──────────────────
+    // ── Run MathJax on the question text AND options ───────
     const mathEl = document.getElementById('eq-q-math');
-    if(mathEl && window.MathJax && MathJax.typesetPromise) {
-      await MathJax.typesetPromise([mathEl]);
+    const mathTargets = [mathEl].filter(Boolean);
+    // Also collect all option text spans inside the render target
+    renderDiv.querySelectorAll('span[data-opt-math]').forEach(el => mathTargets.push(el));
+    if(mathTargets.length && window.MathJax && MathJax.typesetPromise) {
+      await MathJax.typesetPromise(mathTargets);
     }
 
     // Give browser a couple frames to paint
-    await new Promise(r => setTimeout(r, 350));
+    await new Promise(r => setTimeout(r, 500));
 
     // ── Capture with html2canvas ───────────────────────────
     const target = document.getElementById('eq-render-target');
