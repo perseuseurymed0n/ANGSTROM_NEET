@@ -23,7 +23,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Bitter:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Lexend:wght@300;400;500&family=Sora:wght@300;400;500;600&family=Albert+Sans:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Source+Code+Pro:wght@300;400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@300;400;500&family=Fira+Code:wght@300;400;500&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Readex+Pro:wght@300;400;500;600&family=Literata:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Domine:wght@400;500;600;700&family=Arvo:ital,wght@0,400;0,700;1,400&family=Cardo:ital,wght@0,400;1,400&family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&family=GFS+Didot&family=Palatino+Linotype:wght@400;700&family=Vollkorn:ital,wght@0,400;0,500;1,400&family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Work+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Mulish:ital,wght@0,300;0,400;0,500;1,300&family=Jost:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Quicksand:wght@300;400;500;600&family=Varela+Round&family=Cabin:ital,wght@0,400;0,500;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;1,300&family=Karla:ital,wght@0,300;0,400;0,500;1,300&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Oswald:wght@300;400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Overpass+Mono:wght@300;400;500&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0a0b0f;
@@ -75,6 +75,415 @@
     --phys: #3a5ac0;
     --chem: #b04a20;
     --bio: #2a7a50;
+  }
+
+  /* ── MIDNIGHT BLUE ── */
+  body.theme-midnight {
+    --bg: #06080f;
+    --bg2: #0b0f1c;
+    --bg3: #101627;
+    --surface: #141c32;
+    --surface2: #1a2440;
+    --border: rgba(100,140,255,0.08);
+    --border2: rgba(100,140,255,0.16);
+    --text: #d8e4ff;
+    --text2: #8a9ec8;
+    --text3: #4a5880;
+    --gold: #6a9fff;
+    --gold2: #88b8ff;
+    --gold-dim: rgba(106,159,255,0.12);
+    --red: #ff6b8a;
+    --red-dim: rgba(255,107,138,0.12);
+    --green: #5ad4a0;
+    --green-dim: rgba(90,212,160,0.12);
+    --blue: #88b8ff;
+    --blue-dim: rgba(136,184,255,0.12);
+    --phys: #88b8ff;
+    --chem: #ff9a6b;
+    --bio: #5ad4a0;
+    --radius: 12px;
+    --radius2: 8px;
+  }
+
+  /* ── FOREST ── */
+  body.theme-forest {
+    --bg: #0c120d;
+    --bg2: #121a13;
+    --bg3: #182118;
+    --surface: #1c2a1c;
+    --surface2: #223323;
+    --border: rgba(90,180,90,0.08);
+    --border2: rgba(90,180,90,0.16);
+    --text: #d4ecd4;
+    --text2: #7aaa7a;
+    --text3: #3a6a3a;
+    --gold: #a0d870;
+    --gold2: #b8f088;
+    --gold-dim: rgba(160,216,112,0.12);
+    --red: #e06060;
+    --red-dim: rgba(224,96,96,0.1);
+    --green: #60d880;
+    --green-dim: rgba(96,216,128,0.12);
+    --blue: #60c0d0;
+    --blue-dim: rgba(96,192,208,0.12);
+    --phys: #70a8e0;
+    --chem: #d8a060;
+    --bio: #60d880;
+    --radius: 12px;
+    --radius2: 8px;
+  }
+
+  /* ── ROSE GOLD ── */
+  body.theme-rosegold {
+    --bg: #f9f0f0;
+    --bg2: #f2e6e6;
+    --bg3: #ead8d8;
+    --surface: #fdf6f6;
+    --surface2: #f2e6e6;
+    --border: rgba(180,80,80,0.1);
+    --border2: rgba(180,80,80,0.2);
+    --text: #2a1010;
+    --text2: #6a3a3a;
+    --text3: #a87878;
+    --gold: #c07050;
+    --gold2: #d88868;
+    --gold-dim: rgba(192,112,80,0.12);
+    --red: #c03060;
+    --red-dim: rgba(192,48,96,0.1);
+    --green: #508a60;
+    --green-dim: rgba(80,138,96,0.1);
+    --blue: #5070b0;
+    --blue-dim: rgba(80,112,176,0.1);
+    --phys: #6080c0;
+    --chem: #c07050;
+    --bio: #508a60;
+    --radius: 12px;
+    --radius2: 8px;
+  }
+
+  /* ── CYBERPUNK ── */
+  body.theme-cyber {
+    --bg: #050508;
+    --bg2: #08080f;
+    --bg3: #0c0c18;
+    --surface: #0f0f22;
+    --surface2: #14142e;
+    --border: rgba(0,255,180,0.1);
+    --border2: rgba(0,255,180,0.2);
+    --text: #e0ffe8;
+    --text2: #60d4a8;
+    --text3: #306858;
+    --gold: #00ffb4;
+    --gold2: #40ffcc;
+    --gold-dim: rgba(0,255,180,0.1);
+    --red: #ff0060;
+    --red-dim: rgba(255,0,96,0.1);
+    --green: #00ff80;
+    --green-dim: rgba(0,255,128,0.1);
+    --blue: #0080ff;
+    --blue-dim: rgba(0,128,255,0.1);
+    --phys: #0080ff;
+    --chem: #ff6000;
+    --bio: #00ff80;
+    --radius: 4px;
+    --radius2: 2px;
+  }
+  body.theme-cyber .logo-name, body.theme-cyber .metric-value { font-family: 'Space Mono', monospace !important; }
+
+  /* ── MOCHA ── */
+  body.theme-mocha {
+    --bg: #1c1410;
+    --bg2: #231a14;
+    --bg3: #2c211a;
+    --surface: #332820;
+    --surface2: #3d3028;
+    --border: rgba(210,160,100,0.1);
+    --border2: rgba(210,160,100,0.18);
+    --text: #f0dcc8;
+    --text2: #b89878;
+    --text3: #6a5040;
+    --gold: #d89850;
+    --gold2: #f0b468;
+    --gold-dim: rgba(216,152,80,0.15);
+    --red: #d06050;
+    --red-dim: rgba(208,96,80,0.12);
+    --green: #80b878;
+    --green-dim: rgba(128,184,120,0.12);
+    --blue: #88a8d0;
+    --blue-dim: rgba(136,168,208,0.12);
+    --phys: #88a8d0;
+    --chem: #d06050;
+    --bio: #80b878;
+    --radius: 12px;
+    --radius2: 8px;
+  }
+
+  /* ── SLATE ── */
+  body.theme-slate {
+    --bg: #0e1117;
+    --bg2: #141822;
+    --bg3: #1a1f2e;
+    --surface: #1f263a;
+    --surface2: #252d45;
+    --border: rgba(140,160,200,0.1);
+    --border2: rgba(140,160,200,0.18);
+    --text: #ccd6f6;
+    --text2: #8892b0;
+    --text3: #495670;
+    --gold: #64ffda;
+    --gold2: #88ffea;
+    --gold-dim: rgba(100,255,218,0.1);
+    --red: #ff6b6b;
+    --red-dim: rgba(255,107,107,0.1);
+    --green: #64ffda;
+    --green-dim: rgba(100,255,218,0.1);
+    --blue: #7facff;
+    --blue-dim: rgba(127,172,255,0.1);
+    --phys: #7facff;
+    --chem: #ffb347;
+    --bio: #64ffda;
+    --radius: 8px;
+    --radius2: 4px;
+  }
+
+  /* ── AURORA ── */
+  body.theme-aurora {
+    --bg: #08080e;
+    --bg2: #0d0d18;
+    --bg3: #121222;
+    --surface: #161628;
+    --surface2: #1c1c34;
+    --border: rgba(160,100,255,0.1);
+    --border2: rgba(160,100,255,0.2);
+    --text: #ede8ff;
+    --text2: #a890e0;
+    --text3: #5a4880;
+    --gold: #c080ff;
+    --gold2: #d8a0ff;
+    --gold-dim: rgba(192,128,255,0.12);
+    --red: #ff6080;
+    --red-dim: rgba(255,96,128,0.1);
+    --green: #60e0a0;
+    --green-dim: rgba(96,224,160,0.1);
+    --blue: #60a0ff;
+    --blue-dim: rgba(96,160,255,0.1);
+    --phys: #60a0ff;
+    --chem: #ff9060;
+    --bio: #60e0a0;
+    --radius: 16px;
+    --radius2: 10px;
+  }
+
+  /* ── PARCHMENT ── */
+  body.theme-parchment {
+    --bg: #faf4e0;
+    --bg2: #f2ead0;
+    --bg3: #e8ddb8;
+    --surface: #fefaf0;
+    --surface2: #f2ead0;
+    --border: rgba(120,80,20,0.1);
+    --border2: rgba(120,80,20,0.2);
+    --text: #2a1a08;
+    --text2: #6a4820;
+    --text3: #a88040;
+    --gold: #8a5a10;
+    --gold2: #a87020;
+    --gold-dim: rgba(138,90,16,0.1);
+    --red: #b04020;
+    --red-dim: rgba(176,64,32,0.08);
+    --green: #387830;
+    --green-dim: rgba(56,120,48,0.1);
+    --blue: #305898;
+    --blue-dim: rgba(48,88,152,0.1);
+    --phys: #305898;
+    --chem: #b04020;
+    --bio: #387830;
+    --radius: 8px;
+    --radius2: 4px;
+  }
+  body.theme-parchment .logo-name { font-family: 'EB Garamond', serif !important; }
+
+  /* ── OCEAN ── */
+  body.theme-ocean {
+    --bg: #040e1c;
+    --bg2: #071628;
+    --bg3: #0a1e38;
+    --surface: #0e2848;
+    --surface2: #123258;
+    --border: rgba(0,180,220,0.1);
+    --border2: rgba(0,180,220,0.2);
+    --text: #c8f0ff;
+    --text2: #6ab0d0;
+    --text3: #306880;
+    --gold: #00c8e8;
+    --gold2: #40e0ff;
+    --gold-dim: rgba(0,200,232,0.12);
+    --red: #ff6080;
+    --red-dim: rgba(255,96,128,0.1);
+    --green: #40d090;
+    --green-dim: rgba(64,208,144,0.1);
+    --blue: #4090ff;
+    --blue-dim: rgba(64,144,255,0.1);
+    --phys: #4090ff;
+    --chem: #ff9040;
+    --bio: #40d090;
+    --radius: 14px;
+    --radius2: 8px;
+  }
+
+  /* ── DRACULA ── */
+  body.theme-dracula {
+    --bg: #282a36; --bg2: #21222c; --bg3: #1e1f29;
+    --surface: #2d2f3f; --surface2: #353748;
+    --border: rgba(98,114,164,0.2); --border2: rgba(98,114,164,0.35);
+    --text: #f8f8f2; --text2: #bd93f9; --text3: #6272a4;
+    --gold: #ffb86c; --gold2: #ffd580; --gold-dim: rgba(255,184,108,0.12);
+    --red: #ff5555; --red-dim: rgba(255,85,85,0.12);
+    --green: #50fa7b; --green-dim: rgba(80,250,123,0.12);
+    --blue: #8be9fd; --blue-dim: rgba(139,233,253,0.12);
+    --phys: #8be9fd; --chem: #ffb86c; --bio: #50fa7b;
+    --radius: 12px; --radius2: 8px;
+  }
+
+  /* ── SOLARIZED DARK ── */
+  body.theme-solar {
+    --bg: #002b36; --bg2: #073642; --bg3: #084052;
+    --surface: #0a4050; --surface2: #0d4f64;
+    --border: rgba(0,168,186,0.15); --border2: rgba(0,168,186,0.28);
+    --text: #fdf6e3; --text2: #93a1a1; --text3: #586e75;
+    --gold: #b58900; --gold2: #cb9600; --gold-dim: rgba(181,137,0,0.15);
+    --red: #dc322f; --red-dim: rgba(220,50,47,0.12);
+    --green: #859900; --green-dim: rgba(133,153,0,0.15);
+    --blue: #268bd2; --blue-dim: rgba(38,139,210,0.15);
+    --phys: #268bd2; --chem: #cb4b16; --bio: #859900;
+    --radius: 10px; --radius2: 6px;
+  }
+
+  /* ── NORD ── */
+  body.theme-nord {
+    --bg: #2e3440; --bg2: #3b4252; --bg3: #434c5e;
+    --surface: #3b4252; --surface2: #434c5e;
+    --border: rgba(136,192,208,0.15); --border2: rgba(136,192,208,0.28);
+    --text: #eceff4; --text2: #d8dee9; --text3: #81a1c1;
+    --gold: #ebcb8b; --gold2: #f0d9a4; --gold-dim: rgba(235,203,139,0.15);
+    --red: #bf616a; --red-dim: rgba(191,97,106,0.15);
+    --green: #a3be8c; --green-dim: rgba(163,190,140,0.15);
+    --blue: #81a1c1; --blue-dim: rgba(129,161,193,0.15);
+    --phys: #81a1c1; --chem: #d08770; --bio: #a3be8c;
+    --radius: 10px; --radius2: 6px;
+  }
+
+  /* ── GRUVBOX ── */
+  body.theme-gruvbox {
+    --bg: #282828; --bg2: #1d2021; --bg3: #3c3836;
+    --surface: #32302f; --surface2: #3c3836;
+    --border: rgba(215,153,33,0.15); --border2: rgba(215,153,33,0.28);
+    --text: #ebdbb2; --text2: #d5c4a1; --text3: #928374;
+    --gold: #d79921; --gold2: #fabd2f; --gold-dim: rgba(215,153,33,0.15);
+    --red: #cc241d; --red-dim: rgba(204,36,29,0.15);
+    --green: #98971a; --green-dim: rgba(152,151,26,0.15);
+    --blue: #458588; --blue-dim: rgba(69,133,136,0.15);
+    --phys: #83a598; --chem: #d65d0e; --bio: #b8bb26;
+    --radius: 8px; --radius2: 4px;
+  }
+  body.theme-gruvbox .logo-name { font-family: 'Courier Prime', monospace !important; }
+
+  /* ── CATPPUCCIN MOCHA ── */
+  body.theme-catppuccin {
+    --bg: #1e1e2e; --bg2: #181825; --bg3: #11111b;
+    --surface: #313244; --surface2: #45475a;
+    --border: rgba(203,166,247,0.12); --border2: rgba(203,166,247,0.22);
+    --text: #cdd6f4; --text2: #bac2de; --text3: #585b70;
+    --gold: #f9e2af; --gold2: #fab387; --gold-dim: rgba(249,226,175,0.12);
+    --red: #f38ba8; --red-dim: rgba(243,139,168,0.12);
+    --green: #a6e3a1; --green-dim: rgba(166,227,161,0.12);
+    --blue: #89b4fa; --blue-dim: rgba(137,180,250,0.12);
+    --phys: #89b4fa; --chem: #fab387; --bio: #a6e3a1;
+    --radius: 14px; --radius2: 8px;
+  }
+
+  /* ── TOKYO NIGHT ── */
+  body.theme-tokyo {
+    --bg: #1a1b26; --bg2: #16161e; --bg3: #13131a;
+    --surface: #1f2335; --surface2: #292e42;
+    --border: rgba(122,162,247,0.12); --border2: rgba(122,162,247,0.22);
+    --text: #c0caf5; --text2: #9aa5ce; --text3: #565f89;
+    --gold: #e0af68; --gold2: #ffc777; --gold-dim: rgba(224,175,104,0.12);
+    --red: #f7768e; --red-dim: rgba(247,118,142,0.12);
+    --green: #9ece6a; --green-dim: rgba(158,206,106,0.12);
+    --blue: #7aa2f7; --blue-dim: rgba(122,162,247,0.12);
+    --phys: #7aa2f7; --chem: #ff9e64; --bio: #9ece6a;
+    --radius: 12px; --radius2: 6px;
+  }
+
+  /* ── AMBER TERMINAL ── */
+  body.theme-amber {
+    --bg: #0c0900; --bg2: #120e00; --bg3: #1a1400;
+    --surface: #221c00; --surface2: #2c2400;
+    --border: rgba(255,176,0,0.12); --border2: rgba(255,176,0,0.22);
+    --text: #ffcc00; --text2: #cc9900; --text3: #7a5a00;
+    --gold: #ffaa00; --gold2: #ffcc44; --gold-dim: rgba(255,170,0,0.15);
+    --red: #ff6622; --red-dim: rgba(255,102,34,0.12);
+    --green: #88dd00; --green-dim: rgba(136,221,0,0.12);
+    --blue: #00aaff; --blue-dim: rgba(0,170,255,0.12);
+    --phys: #ffaa44; --chem: #ff6622; --bio: #88dd00;
+    --radius: 4px; --radius2: 2px;
+  }
+  body.theme-amber .logo-name, body.theme-amber .metric-value { font-family: 'Share Tech Mono', monospace !important; }
+
+  /* ── SAKURA ── */
+  body.theme-sakura {
+    --bg: #fff5f7; --bg2: #ffe8ed; --bg3: #ffd5de;
+    --surface: #fffafc; --surface2: #ffe8ed;
+    --border: rgba(220,80,120,0.1); --border2: rgba(220,80,120,0.2);
+    --text: #2d0a14; --text2: #7a2040; --text3: #c07090;
+    --gold: #d6226a; --gold2: #e83d80; --gold-dim: rgba(214,34,106,0.1);
+    --red: #c01840; --red-dim: rgba(192,24,64,0.1);
+    --green: #387858; --green-dim: rgba(56,120,88,0.1);
+    --blue: #385898; --blue-dim: rgba(56,88,152,0.1);
+    --phys: #4060b0; --chem: #c04030; --bio: #387858;
+    --radius: 16px; --radius2: 10px;
+  }
+
+  /* ── OBSIDIAN ── */
+  body.theme-obsidian {
+    --bg: #0d0d0d; --bg2: #111111; --bg3: #161616;
+    --surface: #1c1c1c; --surface2: #242424;
+    --border: rgba(255,255,255,0.06); --border2: rgba(255,255,255,0.12);
+    --text: #e0e0e0; --text2: #a0a0a0; --text3: #505050;
+    --gold: #d4a843; --gold2: #e8c060; --gold-dim: rgba(212,168,67,0.12);
+    --red: #e05050; --red-dim: rgba(224,80,80,0.12);
+    --green: #50c080; --green-dim: rgba(80,192,128,0.12);
+    --blue: #5080d0; --blue-dim: rgba(80,128,208,0.12);
+    --phys: #6090e0; --chem: #e08050; --bio: #50c080;
+    --radius: 6px; --radius2: 3px;
+  }
+
+  /* ── LAVENDER ── */
+  body.theme-lavender {
+    --bg: #f4f0ff; --bg2: #ede6ff; --bg3: #e2d8ff;
+    --surface: #faf8ff; --surface2: #ede6ff;
+    --border: rgba(100,60,200,0.1); --border2: rgba(100,60,200,0.2);
+    --text: #1a0a30; --text2: #5a3090; --text3: #9a80c0;
+    --gold: #8040d0; --gold2: #a060e8; --gold-dim: rgba(128,64,208,0.1);
+    --red: #c02060; --red-dim: rgba(192,32,96,0.1);
+    --green: #306080; --green-dim: rgba(48,96,128,0.1);
+    --blue: #4060c0; --blue-dim: rgba(64,96,192,0.1);
+    --phys: #5070d0; --chem: #c05040; --bio: #407090;
+    --radius: 16px; --radius2: 10px;
+  }
+
+  /* ── CUSTOM THEME ── */
+  body.theme-custom {
+    /* Populated dynamically from user CSS */
+  }
+
+  /* ── QUESTION FONT VARIABLE ── */
+  :root {
+    --q-font: 'Lora', serif;
+  }
+  .q-text, .review-question, .qview-question, .rte-content {
+    font-family: var(--q-font) !important;
   }
 
   *, *::before, *::after {
@@ -1344,6 +1753,13 @@
       </svg>
       Add Question
     </div>
+    <div class="nav-item" onclick="navigate('gaps', this)">
+      <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M8 1.5A6.5 6.5 0 1 1 1.5 8"/><path d="M5 5.5h.01M8 5.5h.01M11 5.5h.01"/><path d="M4 9s1 2 4 2 4-2 4-2"/>
+      </svg>
+      Conceptual Gaps
+      <span class="nav-badge" id="gaps-badge" style="background:var(--blue);display:none">0</span>
+    </div>
     <div class="nav-item" id="review-nav-item" onclick="navigate('review', this)">
       <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
         <path d="M2 4h12M2 8h8M2 12h5"/><circle cx="13" cy="11" r="2.5"/><path d="M13 9.5V11l1 1"/>
@@ -1712,6 +2128,39 @@
       </div>
     </div>
 
+    <!-- CONCEPTUAL GAPS -->
+    <div class="page" id="page-gaps">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--text)">🧠 Conceptual Gaps</div>
+          <div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px">Track concepts you misunderstand — record the gap, the mistake, and the real explanation</div>
+        </div>
+        <button class="btn btn-primary" onclick="openGapModal()">+ Add Conceptual Gap</button>
+      </div>
+
+      <!-- Filter row -->
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+        <div class="search-input-wrap" style="flex:1;min-width:180px">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="gap-search" placeholder="Search gaps..." oninput="renderGapsPage()">
+        </div>
+        <select class="filter-select" id="gap-f-subject" onchange="renderGapsPage()">
+          <option value="">All Subjects</option>
+          <option value="Physics">Physics</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Biology">Biology</option>
+        </select>
+        <select class="filter-select" id="gap-f-sort" onchange="renderGapsPage()">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="alpha">A→Z</option>
+        </select>
+      </div>
+
+      <div id="gaps-count" style="font-size:0.75rem;color:var(--text3);margin-bottom:14px;font-family:'JetBrains Mono',monospace;"></div>
+      <div id="gaps-list" style="display:flex;flex-direction:column;gap:14px;"></div>
+    </div>
+
     <!-- REVIEW -->
     <div class="page" id="page-review">
       <div class="review-container" id="review-container">
@@ -1856,12 +2305,35 @@
 
         <div class="card" style="margin-bottom:20px">
           <div class="card-title" style="margin-bottom:18px">Appearance</div>
-          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)">
-            <div>
-              <div style="font-size:0.88rem;color:var(--text);margin-bottom:3px">Theme</div>
-              <div style="font-size:0.75rem;color:var(--text3)">Switch between dark academic and light parchment</div>
+
+          <!-- THEME PICKER -->
+          <div style="padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:18px">
+            <div style="font-size:0.88rem;color:var(--text);margin-bottom:4px;font-weight:500">Theme</div>
+            <div style="font-size:0.75rem;color:var(--text3);margin-bottom:12px">Choose a visual theme for ANGSTROM</div>
+            <div id="theme-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:10px"></div>
+          </div>
+
+          <!-- CUSTOM THEME -->
+          <div style="padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:18px" id="custom-theme-section" style="display:none">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <div>
+                <div style="font-size:0.88rem;color:var(--text);font-weight:500">Custom Theme</div>
+                <div style="font-size:0.75rem;color:var(--text3)">Paste CSS variables to define your own theme</div>
+              </div>
+              <button onclick="copyThemeCreatorPrompt()" class="btn btn-ghost" style="font-size:0.75rem;white-space:nowrap">📋 Copy AI Prompt</button>
             </div>
-            <button class="btn btn-ghost" id="settings-theme-btn" onclick="toggleTheme();updateSettingsThemeBtn()" style="min-width:90px"></button>
+            <textarea id="custom-theme-css" class="form-textarea" style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;min-height:160px;resize:vertical" placeholder="Paste your CSS variables here, e.g.:&#10;--bg: #1a1a2e;&#10;--bg2: #16213e;&#10;--text: #e0e0e0;&#10;--gold: #e94560;&#10;..."></textarea>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button class="btn btn-primary" style="font-size:0.82rem" onclick="applyCustomTheme()">Apply Theme</button>
+              <button class="btn btn-ghost" style="font-size:0.82rem;color:var(--text3)" onclick="clearCustomTheme()">Clear</button>
+            </div>
+          </div>
+
+          <!-- QUESTION FONT PICKER -->
+          <div>
+            <div style="font-size:0.88rem;color:var(--text);margin-bottom:4px;font-weight:500">Question Font</div>
+            <div style="font-size:0.75rem;color:var(--text3);margin-bottom:12px">Font used in question cards, review, and search log</div>
+            <div id="font-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px"></div>
           </div>
         </div>
 
@@ -1979,6 +2451,130 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- CONCEPTUAL GAP MODAL -->
+<div class="qview-overlay" id="gap-modal-overlay" onclick="if(event.target===this)closeGapModal()">
+  <div class="qview-modal" style="max-width:780px;max-height:90vh;overflow-y:auto">
+    <div class="qview-topbar">
+      <div id="gap-modal-title" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--text)">🧠 Add Conceptual Gap</div>
+      <button class="qview-close" onclick="closeGapModal()">✕ Close</button>
+    </div>
+    <div class="qview-body" style="padding:24px 28px">
+
+      <!-- Subject + Chapter row -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px">
+        <div>
+          <label class="form-label" style="margin-bottom:6px">Subject</label>
+          <div class="select-wrap">
+            <select class="form-select" id="gap-subject">
+              <option value="">All / General</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Biology">Biology</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="form-label" style="margin-bottom:6px">Chapter / Topic (optional)</label>
+          <input class="form-input" id="gap-chapter" type="text" placeholder="e.g. Thermodynamics">
+        </div>
+      </div>
+
+      <!-- Concept / Question field -->
+      <div class="form-group">
+        <label class="form-label" style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+          <span style="width:16px;height:16px;background:var(--blue-dim);border:1px solid var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:var(--blue);flex-shrink:0">1</span>
+          Concept / Question
+          <span style="font-size:0.7rem;color:var(--text3);font-weight:400;font-family:'Instrument Sans',sans-serif;text-transform:none;letter-spacing:0">(What is the concept or question you got wrong?)</span>
+        </label>
+        <div class="rte-wrap">
+          <div class="rte-toolbar" id="gap-q-rte-toolbar"></div>
+          <div class="rte-body" id="gap-q-rte-body" contenteditable="true"
+            data-placeholder="Describe the concept or paste the question… supports LaTeX: $E = mc^2$"
+            style="min-height:100px"
+            onkeydown="rteHandleKey(event,'gap-q-rte-body')"></div>
+        </div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius2) var(--radius2);padding:8px 14px;min-height:32px">
+          <div style="font-size:0.6rem;color:var(--text3);font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px">Preview</div>
+          <div id="gap-q-render" style="font-size:0.88rem;color:var(--text3);font-style:italic;line-height:1.6">Start typing to see preview...</div>
+        </div>
+      </div>
+
+      <!-- Mistake field -->
+      <div class="form-group">
+        <label class="form-label" style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+          <span style="width:16px;height:16px;background:var(--red-dim);border:1px solid var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:var(--red);flex-shrink:0">2</span>
+          My Mistake
+          <span style="font-size:0.7rem;color:var(--text3);font-weight:400;font-family:'Instrument Sans',sans-serif;text-transform:none;letter-spacing:0">(What did you think was correct? What went wrong?)</span>
+        </label>
+        <div class="rte-wrap">
+          <div class="rte-toolbar" id="gap-mistake-rte-toolbar"></div>
+          <div class="rte-body" id="gap-mistake-rte-body" contenteditable="true"
+            data-placeholder="I thought that… / I confused… / I forgot that…"
+            style="min-height:80px"
+            onkeydown="rteHandleKey(event,'gap-mistake-rte-body')"></div>
+        </div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius2) var(--radius2);padding:8px 14px;min-height:28px">
+          <div id="gap-mistake-render" style="font-size:0.85rem;color:var(--text3);font-style:italic;line-height:1.6">Start typing to see preview...</div>
+        </div>
+      </div>
+
+      <!-- Explanation field -->
+      <div class="form-group">
+        <label class="form-label" style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+          <span style="width:16px;height:16px;background:var(--green-dim);border:1px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:var(--green);flex-shrink:0">3</span>
+          Correct Explanation
+          <span style="font-size:0.7rem;color:var(--text3);font-weight:400;font-family:'Instrument Sans',sans-serif;text-transform:none;letter-spacing:0">(The right concept, formula, or reasoning)</span>
+        </label>
+        <div class="rte-wrap">
+          <div class="rte-toolbar" id="gap-exp-rte-toolbar"></div>
+          <div class="rte-body" id="gap-exp-rte-body" contenteditable="true"
+            data-placeholder="The correct explanation is… / The formula is $F = ma$…"
+            style="min-height:100px"
+            onkeydown="rteHandleKey(event,'gap-exp-rte-body')"></div>
+        </div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius2) var(--radius2);padding:8px 14px;min-height:32px">
+          <div style="font-size:0.6rem;color:var(--text3);font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px">Preview</div>
+          <div id="gap-exp-render" style="font-size:0.88rem;color:var(--text3);font-style:italic;line-height:1.6">Start typing to see preview...</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="qview-actions">
+      <button class="btn btn-ghost" onclick="closeGapModal()">Cancel</button>
+      <button class="btn btn-primary" id="gap-save-btn" onclick="saveGap()">Save Gap →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONCEPTUAL GAP VIEWER -->
+<div class="qview-overlay" id="gapview-overlay" onclick="handleGapViewOverlayClick(event)">
+  <div class="qview-modal" style="max-width:720px;max-height:90vh;overflow-y:auto">
+    <div class="qview-topbar">
+      <div class="qview-tags" id="gapview-tags"></div>
+      <button class="qview-close" onclick="closeGapView()">✕ Close</button>
+    </div>
+    <div class="qview-body">
+      <div style="font-size:0.65rem;color:var(--blue);font-family:'JetBrains Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px">Concept / Question</div>
+      <div class="qview-question rte-content" id="gapview-question" style="font-family:var(--q-font,'Lora',serif)"></div>
+
+      <div style="margin:20px 0 10px;padding:14px 18px;background:var(--red-dim);border:1px solid rgba(224,90,90,0.2);border-radius:var(--radius2)">
+        <div style="font-size:0.65rem;color:var(--red);font-family:'JetBrains Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px">✗ My Mistake</div>
+        <div class="rte-content" id="gapview-mistake" style="font-size:0.9rem;color:var(--text);line-height:1.7"></div>
+      </div>
+
+      <div style="padding:14px 18px;background:var(--green-dim);border:1px solid rgba(90,173,122,0.2);border-radius:var(--radius2)">
+        <div style="font-size:0.65rem;color:var(--green);font-family:'JetBrains Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px">✓ Correct Explanation</div>
+        <div class="rte-content" id="gapview-explanation" style="font-size:0.9rem;color:var(--text);line-height:1.7"></div>
+      </div>
+    </div>
+    <div class="qview-actions">
+      <button class="btn btn-ghost" id="gapview-delete-btn" onclick="gapViewDelete()" style="color:var(--red);border-color:rgba(224,90,90,0.3)">Delete</button>
+      <button class="btn btn-ghost" onclick="gapViewEdit()" style="color:var(--gold2);border-color:rgba(201,168,76,0.35)">✎ Edit</button>
+      <button class="btn btn-primary" onclick="closeGapView()">Close</button>
+    </div>
   </div>
 </div>
 
@@ -2792,7 +3388,7 @@ function addDays(date, days) {
 // ============================================================
 // NAVIGATION
 // ============================================================
-const titles = { dashboard:'Dashboard', add:'Add Question', review:'Review Questions', search:'Search Log', analytics:'Analytics', settings:'Settings' };
+const titles = { dashboard:'Dashboard', add:'Add Question', gaps:'Conceptual Gaps', review:'Review Questions', search:'Search Log', starred:'Starred', analytics:'Analytics', settings:'Settings' };
 
 function navigate(page, el) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -2806,6 +3402,8 @@ function navigate(page, el) {
   if(page === 'analytics') renderAnalytics();
   if(page === 'settings') initSettingsPage();
   if(page === 'add') populateMistakeSelectAndTestDropdowns();
+  if(page === 'gaps') renderGapsPage();
+  if(page === 'starred') renderStarredPage();
 }
 
 // ============================================================
@@ -3398,6 +3996,43 @@ function rteSet(id, html) {
   el.innerHTML = html || '';
 }
 
+// Build a toolbar programmatically (used by gap modal RTEs)
+function rteInitToolbar(toolbar, body) {
+  if(!toolbar || !body) return;
+  const edId = body.id;
+  const btns = [
+    { title:'Bold', label:'<b>B</b>', cmd:()=>rteCmd(edId,'bold') },
+    { title:'Italic', label:'<i>I</i>', cmd:()=>rteCmd(edId,'italic') },
+    { title:'Underline', label:'<u>U</u>', cmd:()=>rteCmd(edId,'underline') },
+    { sep:true },
+    { title:'Superscript', label:'x²', cmd:()=>rteCmd(edId,'superscript') },
+    { title:'Subscript', label:'x₂', cmd:()=>rteCmd(edId,'subscript') },
+    { sep:true },
+    { title:'Bullet list', label:'• List', cmd:()=>rteCmd(edId,'insertUnorderedList') },
+    { title:'Numbered list', label:'1. List', cmd:()=>rteCmd(edId,'insertOrderedList') },
+    { sep:true },
+    { title:'Highlight', label:'▐ HL', cmd:()=>rteCmd(edId,'hiliteColor','rgba(201,168,76,0.3)') },
+    { title:'Remove formatting', label:'✕ Clr', cmd:()=>rteCmd(edId,'removeFormat'), style:'color:var(--red)' },
+    { sep:true },
+    { title:'Inline LaTeX $...$', label:'∑ LaTeX', cmd:()=>rteInsertLatex(edId), style:'background:var(--gold-dim);border-color:rgba(201,168,76,0.4);color:var(--gold2);font-family:JetBrains Mono,monospace;font-weight:600' },
+    { title:'Block math $$...$$', label:'∑∑ Block', cmd:()=>rteInsertDisplayLatex(edId), style:'color:var(--gold);font-family:JetBrains Mono,monospace' },
+  ];
+  toolbar.innerHTML = '';
+  btns.forEach(b => {
+    if(b.sep) {
+      const s = document.createElement('div'); s.className = 'rte-sep'; toolbar.appendChild(s);
+    } else {
+      const btn = document.createElement('button');
+      btn.className = 'rte-btn';
+      btn.title = b.title;
+      btn.innerHTML = b.label;
+      if(b.style) btn.setAttribute('style', b.style);
+      btn.addEventListener('mousedown', e => { e.preventDefault(); b.cmd(); });
+      toolbar.appendChild(btn);
+    }
+  });
+}
+
 function rteCmd(id, cmd, val) {
   document.getElementById(id).focus();
   document.execCommand(cmd, false, val || null);
@@ -3580,6 +4215,15 @@ async function openQView(id) {
     <div class="qview-meta-item"><div class="qview-meta-key">SR Step</div><div class="qview-meta-val">${(q.srStep||0)+1} / 5</div></div>
   `;
   document.getElementById('qview-delete-btn').setAttribute('data-id', id);
+
+  // Update star button to reflect current state
+  const starBtn = document.getElementById('qview-star-btn');
+  if(starBtn) {
+    starBtn.textContent = q.starred ? '★ Starred' : '☆ Star';
+    starBtn.style.color = q.starred ? 'var(--gold2)' : '';
+    starBtn.style.borderColor = q.starred ? 'rgba(201,168,76,0.35)' : '';
+  }
+
   document.getElementById('qview-overlay').classList.add('visible');
   document.body.style.overflow = 'hidden';
 
@@ -3683,6 +4327,105 @@ function qviewEdit() {
 
   navigate('add', document.querySelectorAll('.nav-item')[1]);
   window.scrollTo(0, 0);
+}
+
+function toggleStarQuestion(id) {
+  const q = questions.find(x => x.id === id);
+  if(!q) return;
+  q.starred = !q.starred;
+  saveData();
+  updateStarredBadge();
+  // Refresh whichever list is visible
+  if(document.getElementById('page-search').classList.contains('active')) filterQuestions();
+  if(document.getElementById('page-starred').classList.contains('active')) renderStarredPage();
+  showToast(q.starred ? '★ Question starred!' : '☆ Unstarred.');
+}
+
+function qviewToggleStar() {
+  const q = questions.find(x => x.id === qviewCurrentId);
+  if(!q) return;
+  q.starred = !q.starred;
+  saveData();
+  updateStarredBadge();
+  // Update the button in the viewer
+  const btn = document.getElementById('qview-star-btn');
+  if(btn) {
+    btn.textContent = q.starred ? '★ Starred' : '☆ Star';
+    btn.style.color = q.starred ? 'var(--gold2)' : '';
+    btn.style.borderColor = q.starred ? 'rgba(201,168,76,0.35)' : '';
+  }
+  // Also refresh search list if open underneath
+  if(document.getElementById('page-search').classList.contains('active')) filterQuestions();
+  if(document.getElementById('page-starred').classList.contains('active')) renderStarredPage();
+  showToast(q.starred ? '★ Question starred!' : '☆ Unstarred.');
+}
+
+function updateStarredBadge() {
+  const cnt = questions.filter(q => q.starred).length;
+  const badge = document.getElementById('starred-badge');
+  if(badge) {
+    badge.textContent = cnt;
+    badge.style.display = cnt > 0 ? 'inline' : 'none';
+  }
+}
+
+function renderStarredPage() {
+  const subj = document.getElementById('sf-subject')?.value || '';
+  const sort = document.getElementById('sf-sort')?.value || 'newest';
+
+  let filtered = questions.filter(q => q.starred);
+  if(subj) filtered = filtered.filter(q => q.subject === subj);
+
+  if(sort === 'oldest') filtered.sort((a,b) => (a.dateAdded||'').localeCompare(b.dateAdded||''));
+  else if(sort === 'difficulty-high') filtered.sort((a,b) => (b.difficulty||0) - (a.difficulty||0));
+  else filtered.sort((a,b) => (b.dateAdded||'').localeCompare(a.dateAdded||''));
+
+  const countEl = document.getElementById('starred-count');
+  if(countEl) countEl.textContent = filtered.length + ' starred question' + (filtered.length !== 1 ? 's' : '');
+
+  const list = document.getElementById('starred-list');
+  if(!list) return;
+
+  if(filtered.length === 0) {
+    list.innerHTML = `<div class="empty-state">
+      <div class="empty-icon">☆</div>
+      <div class="empty-title">No starred questions yet</div>
+      <div class="empty-sub">Star questions from the Search Log or while viewing them.</div>
+    </div>`;
+    return;
+  }
+
+  const typeTagMap = {};
+  MISTAKE_TYPES.forEach((mt,i) => { typeTagMap[mt] = ['tag-app','tag-mem','tag-know','tag-care'][i % 4]; });
+  const subjTagMap = { Physics:'tag-phys', Chemistry:'tag-chem', Biology:'tag-bio' };
+
+  list.innerHTML = filtered.map((q, i) => {
+    const qPreview = (q.question || '').replace(/<[^>]*>/g,'').replace(/\$\$[\s\S]*?\$\$/g,'[equation]').replace(/\$[^$]*\$/g,'[math]').slice(0,140);
+    const testTagHtml = (q.testTags||[]).map(t =>
+      `<span class="tag tag-test">${t.coaching} ${t.testType}${t.number?' #'+t.number:''}</span>`
+    ).join('');
+    return `
+    <div class="q-card" onclick="openQView('${q.id}')">
+      <div class="q-index">★</div>
+      <div class="q-body">
+        <div class="q-text">${qPreview}${qPreview.length >= 140 ? '...' : ''}</div>
+        <div class="q-tags">
+          <span class="tag ${subjTagMap[q.subject]||''}">${q.subject}</span>
+          <span class="tag" style="background:var(--surface2);border-color:var(--border2);color:var(--text2)">${q.chapter}</span>
+          <span class="tag ${typeTagMap[q.mistakeType]||''}">${q.mistakeType}</span>
+          ${q.difficulty ? `<span class="tag" style="border-color:var(--border);color:var(--text3)">${'★'.repeat(q.difficulty)}</span>` : ''}
+          ${testTagHtml}
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px" onclick="event.stopPropagation()">
+        <div class="q-date">${q.dateAdded||''}</div>
+        <div style="display:flex;gap:6px">
+          <button class="btn btn-ghost" style="padding:4px 8px;font-size:0.8rem;color:var(--gold2);border-color:rgba(201,168,76,0.5)" onclick="toggleStarQuestion('${q.id}')" title="Unstar">★</button>
+          <button class="btn btn-ghost" style="padding:4px 10px;font-size:0.72rem" onclick="openDeleteModal('${q.id}')">Delete</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function openDeleteModal(id) {
@@ -4998,7 +5741,6 @@ function chDragEnd(e) {
 // SETTINGS
 // ============================================================
 function initSettingsPage() {
-  updateSettingsThemeBtn();
   // Load backup frequency
   const freq = localStorage.getItem('anatom_backup_freq') || 'off';
   document.getElementById('backup-freq').value = freq;
@@ -5012,13 +5754,18 @@ function initSettingsPage() {
   renderMistakeTypeList();
   // Test source editor
   renderTestSourceEditor();
+  // Theme grid
+  renderThemeGrid();
+  // Font grid
+  renderFontGrid();
+  // Custom theme textarea
+  const savedCss = localStorage.getItem('anatom_custom_css') || '';
+  const el = document.getElementById('custom-theme-css');
+  if(el) el.value = savedCss;
 }
 
 function updateSettingsThemeBtn() {
-  const btn = document.getElementById('settings-theme-btn');
-  if(!btn) return;
-  const isLight = document.body.classList.contains('light');
-  btn.textContent = isLight ? '☀️  Light mode' : '🌙  Dark mode';
+  // Legacy — no-op now (theme handled by grid)
 }
 
 function saveBackupSettings() {
@@ -5068,20 +5815,350 @@ function importData(event) {
 }
 
 // ============================================================
-// THEME
+// THEME SYSTEM
 // ============================================================
+const THEMES = [
+  { id:'dark',        label:'Dark Academic',    emoji:'🌑', preview:['#0a0b0f','#c9a84c','#e8e4d9'] },
+  { id:'light',       label:'Light Parchment',  emoji:'☀️', preview:['#f4f1eb','#9a6e1a','#1a1810'] },
+  { id:'theme-midnight',  label:'Midnight Blue',    emoji:'🌌', preview:['#06080f','#6a9fff','#d8e4ff'] },
+  { id:'theme-forest',    label:'Forest',           emoji:'🌲', preview:['#0c120d','#a0d870','#d4ecd4'] },
+  { id:'theme-rosegold',  label:'Rose Gold',        emoji:'🌸', preview:['#f9f0f0','#c07050','#2a1010'] },
+  { id:'theme-cyber',     label:'Cyberpunk',        emoji:'⚡', preview:['#050508','#00ffb4','#e0ffe8'] },
+  { id:'theme-mocha',     label:'Mocha',            emoji:'☕', preview:['#1c1410','#d89850','#f0dcc8'] },
+  { id:'theme-slate',     label:'Slate',            emoji:'🪨', preview:['#0e1117','#64ffda','#ccd6f6'] },
+  { id:'theme-aurora',    label:'Aurora',           emoji:'🔮', preview:['#08080e','#c080ff','#ede8ff'] },
+  { id:'theme-parchment', label:'Parchment',        emoji:'📜', preview:['#faf4e0','#8a5a10','#2a1a08'] },
+  { id:'theme-ocean',     label:'Ocean',            emoji:'🌊', preview:['#040e1c','#00c8e8','#c8f0ff'] },
+  { id:'theme-dracula',   label:'Dracula',          emoji:'🧛', preview:['#282a36','#ffb86c','#f8f8f2'] },
+  { id:'theme-solar',     label:'Solarized',        emoji:'☀️', preview:['#002b36','#b58900','#fdf6e3'] },
+  { id:'theme-nord',      label:'Nord',             emoji:'❄️', preview:['#2e3440','#ebcb8b','#eceff4'] },
+  { id:'theme-gruvbox',   label:'Gruvbox',          emoji:'📦', preview:['#282828','#fabd2f','#ebdbb2'] },
+  { id:'theme-catppuccin',label:'Catppuccin',       emoji:'🐱', preview:['#1e1e2e','#fab387','#cdd6f4'] },
+  { id:'theme-tokyo',     label:'Tokyo Night',      emoji:'🗼', preview:['#1a1b26','#e0af68','#c0caf5'] },
+  { id:'theme-amber',     label:'Amber Terminal',   emoji:'💛', preview:['#0c0900','#ffcc00','#ffcc00'] },
+  { id:'theme-sakura',    label:'Sakura',           emoji:'🌺', preview:['#fff5f7','#d6226a','#2d0a14'] },
+  { id:'theme-obsidian',  label:'Obsidian',         emoji:'⬛', preview:['#0d0d0d','#d4a843','#e0e0e0'] },
+  { id:'theme-lavender',  label:'Lavender',         emoji:'💜', preview:['#f4f0ff','#8040d0','#1a0a30'] },
+  { id:'custom',          label:'Custom',           emoji:'🎨', preview:['#1a1a1a','#ff6600','#ffffff'] },
+];
+
+const QUESTION_FONTS = [
+  // Serif — Academic / Reading
+  { id:'Lora',                    label:'Lora',                    cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Cormorant Garamond',      label:'Cormorant Garamond',      cat:'Serif',   sample:'The wave function collapses' },
+  { id:'EB Garamond',             label:'EB Garamond',             cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Playfair Display',        label:'Playfair Display',        cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Merriweather',            label:'Merriweather',            cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Source Serif 4',          label:'Source Serif 4',          cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Crimson Text',            label:'Crimson Text',            cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Libre Baskerville',       label:'Libre Baskerville',       cat:'Serif',   sample:'The wave function collapses' },
+  { id:'PT Serif',                label:'PT Serif',                cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Bitter',                  label:'Bitter',                  cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Spectral',                label:'Spectral',                cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Literata',                label:'Literata',                cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Domine',                  label:'Domine',                  cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Arvo',                    label:'Arvo',                    cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Cardo',                   label:'Cardo',                   cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Alegreya',                label:'Alegreya',                cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Vollkorn',                label:'Vollkorn',                cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Gentium Plus',            label:'Gentium Plus',            cat:'Serif',   sample:'The wave function collapses' },
+  { id:'Noto Serif',              label:'Noto Serif',              cat:'Serif',   sample:'The wave function collapses' },
+  // Sans-serif — Clean / Modern
+  { id:'Instrument Sans',         label:'Instrument Sans',         cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Inter',                   label:'Inter',                   cat:'Sans',    sample:'The wave function collapses' },
+  { id:'DM Sans',                 label:'DM Sans',                 cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Outfit',                  label:'Outfit',                  cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Nunito',                  label:'Nunito',                  cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Plus Jakarta Sans',       label:'Plus Jakarta Sans',       cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Lexend',                  label:'Lexend',                  cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Sora',                    label:'Sora',                    cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Albert Sans',             label:'Albert Sans',             cat:'Sans',    sample:'The wave function collapses' },
+  { id:'IBM Plex Sans',           label:'IBM Plex Sans',           cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Fira Sans',               label:'Fira Sans',               cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Atkinson Hyperlegible',   label:'Atkinson Hyperlegible',   cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Readex Pro',              label:'Readex Pro',              cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Noto Sans',               label:'Noto Sans',               cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Roboto',                  label:'Roboto',                  cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Open Sans',               label:'Open Sans',               cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Raleway',                 label:'Raleway',                 cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Work Sans',               label:'Work Sans',               cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Poppins',                 label:'Poppins',                 cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Mulish',                  label:'Mulish',                  cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Josefin Sans',            label:'Josefin Sans',            cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Jost',                    label:'Jost',                    cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Quicksand',               label:'Quicksand',               cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Rubik',                   label:'Rubik',                   cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Karla',                   label:'Karla',                   cat:'Sans',    sample:'The wave function collapses' },
+  { id:'Cabin',                   label:'Cabin',                   cat:'Sans',    sample:'The wave function collapses' },
+  // Mono — Code / Technical
+  { id:'JetBrains Mono',          label:'JetBrains Mono',          cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Fira Code',               label:'Fira Code',               cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Source Code Pro',         label:'Source Code Pro',         cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Inconsolata',             label:'Inconsolata',             cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Space Mono',              label:'Space Mono',              cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Courier Prime',           label:'Courier Prime',           cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Anonymous Pro',           label:'Anonymous Pro',           cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Ubuntu Mono',             label:'Ubuntu Mono',             cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Overpass Mono',           label:'Overpass Mono',           cat:'Mono',    sample:'The wave function collapses' },
+  { id:'Share Tech Mono',         label:'Share Tech Mono',         cat:'Mono',    sample:'The wave function collapses' },
+];
+
+let _currentFontCat = 'Serif';
+
+function renderThemeGrid() {
+  const grid = document.getElementById('theme-grid');
+  if(!grid) return;
+  const current = localStorage.getItem('anatom_theme') || 'dark';
+  grid.innerHTML = THEMES.map(t => {
+    const [bg, acc, txt] = t.preview;
+    const isActive = (current === t.id) || (current === 'light' && t.id === 'light') || (current === 'dark' && t.id === 'dark');
+    return `<button onclick="applyTheme('${t.id}')" style="
+      background:${bg};border:2px solid ${isActive ? 'var(--gold)' : 'rgba(255,255,255,0.1)'};
+      border-radius:var(--radius2);padding:10px 12px;cursor:pointer;text-align:left;
+      transition:all 0.18s;position:relative;overflow:hidden;
+      box-shadow:${isActive ? '0 0 0 1px var(--gold)' : 'none'}
+    ">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <span style="font-size:0.9rem;line-height:1">${t.emoji}</span>
+        <span style="font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:${txt};letter-spacing:0.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:90px">${t.label}</span>
+      </div>
+      <div style="display:flex;gap:4px">
+        <div style="width:18px;height:18px;border-radius:50%;background:${bg};border:1px solid ${acc}"></div>
+        <div style="width:18px;height:18px;border-radius:50%;background:${acc}"></div>
+        <div style="width:18px;height:18px;border-radius:50%;background:${txt};opacity:0.7"></div>
+      </div>
+      ${isActive ? '<div style="position:absolute;top:5px;right:5px;font-size:0.6rem;color:'+acc+';font-family:JetBrains Mono,monospace">✓ ACTIVE</div>' : ''}
+    </button>`;
+  }).join('');
+
+  // Show/hide custom section
+  const customSec = document.getElementById('custom-theme-section');
+  if(customSec) customSec.style.display = (current === 'custom') ? 'block' : 'none';
+}
+
+function applyTheme(id) {
+  // Remove all theme classes
+  const allClasses = ['light', ...THEMES.map(t => t.id).filter(t => t.startsWith('theme-'))];
+  document.body.classList.remove(...allClasses);
+
+  if(id === 'custom') {
+    document.body.classList.add('theme-custom');
+    applyCustomTheme();
+  } else if(id === 'light') {
+    document.body.classList.add('light');
+  } else if(id === 'dark') {
+    // default (no class needed)
+  } else {
+    document.body.classList.add(id);
+  }
+
+  localStorage.setItem('anatom_theme', id);
+
+  // Show/hide custom CSS section
+  const customSec = document.getElementById('custom-theme-section');
+  if(customSec) customSec.style.display = (id === 'custom') ? 'block' : 'none';
+
+  // Update topbar toggle icon
+  const btn = document.getElementById('theme-toggle');
+  if(btn) btn.textContent = id === 'light' ? '☀️' : id === 'dark' ? '🌙' : '🎨';
+
+  renderThemeGrid();
+}
+
+function applyCustomTheme() {
+  const css = (document.getElementById('custom-theme-css')?.value || '').trim();
+  if(!css) { showToast('Paste some CSS variables first.', 'error'); return; }
+
+  // Parse CSS vars from the textarea
+  let styleEl = document.getElementById('custom-theme-style');
+  if(!styleEl) {
+    styleEl = document.createElement('style');
+    styleEl.id = 'custom-theme-style';
+    document.head.appendChild(styleEl);
+  }
+  styleEl.textContent = `body.theme-custom { ${css} }`;
+  localStorage.setItem('anatom_custom_css', css);
+  document.body.classList.remove(...['light', ...THEMES.map(t => t.id).filter(t => t.startsWith('theme-'))]);
+  document.body.classList.add('theme-custom');
+  localStorage.setItem('anatom_theme', 'custom');
+  showToast('Custom theme applied!');
+  renderThemeGrid();
+}
+
+function clearCustomTheme() {
+  document.getElementById('custom-theme-css').value = '';
+  localStorage.removeItem('anatom_custom_css');
+  const styleEl = document.getElementById('custom-theme-style');
+  if(styleEl) styleEl.textContent = '';
+  applyTheme('dark');
+  showToast('Custom theme cleared.');
+}
+
+function copyThemeCreatorPrompt() {
+  const prompt = `You are a CSS theme creator for ANGSTROM — a dark academic NEET Mistake Journal web app.
+
+The app uses CSS custom properties (variables) on the <body> element for all theming. Here is the complete list of variables you must define:
+
+BACKGROUNDS:
+  --bg         : main page background
+  --bg2        : sidebar / topbar background
+  --bg3        : input fields, deep surfaces
+  --surface    : cards, panels
+  --surface2   : nested card elements, hover states
+
+BORDERS:
+  --border     : subtle borders (often rgba with low opacity)
+  --border2    : stronger borders, focused states
+
+TEXT:
+  --text       : primary text
+  --text2      : secondary/muted text
+  --text3      : placeholder, very muted text
+
+ACCENT (replaces "gold" in the design):
+  --gold       : primary accent color (buttons, active states, highlights)
+  --gold2      : lighter/brighter accent variant
+  --gold-dim   : very low opacity accent for backgrounds
+
+STATUS COLORS:
+  --red        : errors, wrong answers, delete
+  --red-dim    : rgba low opacity red for backgrounds
+  --green      : correct, success
+  --green-dim  : rgba low opacity green for backgrounds
+  --blue       : info, links
+  --blue-dim   : rgba low opacity blue for backgrounds
+
+SUBJECT COLORS (Physics / Chemistry / Biology tag colors):
+  --phys       : Physics label color
+  --chem       : Chemistry label color
+  --bio        : Biology label color
+
+SHAPE:
+  --radius     : card border radius (e.g. 12px)
+  --radius2    : inner element radius (e.g. 8px)
+
+EXAMPLE (Dracula theme):
+body.theme-custom {
+  --bg: #282a36;
+  --bg2: #21222c;
+  --bg3: #1e1f29;
+  --surface: #2d2f3f;
+  --surface2: #353748;
+  --border: rgba(98,114,164,0.2);
+  --border2: rgba(98,114,164,0.35);
+  --text: #f8f8f2;
+  --text2: #bd93f9;
+  --text3: #6272a4;
+  --gold: #ffb86c;
+  --gold2: #ffd580;
+  --gold-dim: rgba(255,184,108,0.12);
+  --red: #ff5555;
+  --red-dim: rgba(255,85,85,0.12);
+  --green: #50fa7b;
+  --green-dim: rgba(80,250,123,0.12);
+  --blue: #8be9fd;
+  --blue-dim: rgba(139,233,253,0.12);
+  --phys: #8be9fd;
+  --chem: #ffb86c;
+  --bio: #50fa7b;
+  --radius: 12px;
+  --radius2: 8px;
+}
+
+Now create a theme called "[YOUR THEME NAME]" with a [DESCRIBE MOOD/COLORS] palette. Return ONLY the CSS variable block (no explanation, no markdown fences).`;
+
+  navigator.clipboard.writeText(prompt).then(() => {
+    showToast('AI prompt copied! Paste into ChatGPT, Claude, or Gemini.');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = prompt;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+    showToast('Prompt copied to clipboard!');
+  });
+}
+
+function renderFontGrid() {
+  const grid = document.getElementById('font-grid');
+  if(!grid) return;
+  const currentFont = localStorage.getItem('anatom_q_font') || 'Lora';
+  const cats = ['Serif', 'Sans', 'Mono'];
+
+  // Category tabs
+  const tabsHtml = `<div style="display:flex;gap:6px;margin-bottom:12px">
+    ${cats.map(c => `<button onclick="_currentFontCat='${c}';renderFontGrid()" style="
+      padding:4px 12px;border-radius:20px;font-size:0.72rem;font-family:'JetBrains Mono',monospace;
+      cursor:pointer;border:1px solid ${_currentFontCat===c?'var(--gold)':'var(--border2)'};
+      background:${_currentFontCat===c?'var(--gold-dim)':'transparent'};
+      color:${_currentFontCat===c?'var(--gold2)':'var(--text3)'};
+      transition:all 0.15s
+    ">${c}</button>`).join('')}
+  </div>`;
+
+  const fonts = QUESTION_FONTS.filter(f => f.cat === _currentFontCat);
+  const fontCardsHtml = fonts.map(f => {
+    const isActive = currentFont === f.id;
+    return `<button onclick="applyQuestionFont('${f.id.replace(/'/g,"\\'")}',this)" style="
+      background:var(--surface);border:1.5px solid ${isActive ? 'var(--gold)' : 'var(--border)'};
+      border-radius:var(--radius2);padding:12px 14px;cursor:pointer;text-align:left;
+      transition:all 0.18s;position:relative;
+      box-shadow:${isActive ? '0 0 0 1px var(--gold-dim)' : 'none'}
+    ">
+      <div style="font-size:0.62rem;font-family:'JetBrains Mono',monospace;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px">${f.label}</div>
+      <div style="font-family:'${f.id}',${f.cat === 'Mono' ? 'monospace' : f.cat === 'Serif' ? 'serif' : 'sans-serif'};font-size:0.9rem;color:var(--text);line-height:1.5">${f.sample}</div>
+      ${isActive ? '<div style="position:absolute;top:6px;right:8px;font-size:0.55rem;color:var(--gold);font-family:JetBrains Mono,monospace;letter-spacing:0.05em">✓ ACTIVE</div>' : ''}
+    </button>`;
+  }).join('');
+
+  grid.innerHTML = tabsHtml + `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px">${fontCardsHtml}</div>`;
+}
+
+function applyQuestionFont(fontId) {
+  document.documentElement.style.setProperty('--q-font', `'${fontId}', ${
+    QUESTION_FONTS.find(f=>f.id===fontId)?.cat === 'Mono' ? 'monospace' :
+    QUESTION_FONTS.find(f=>f.id===fontId)?.cat === 'Serif' ? 'serif' : 'sans-serif'
+  }`);
+  localStorage.setItem('anatom_q_font', fontId);
+  showToast(`Font set to ${fontId}`);
+  renderFontGrid();
+}
+
 function toggleTheme() {
-  const isLight = document.body.classList.toggle('light');
-  document.getElementById('theme-toggle').textContent = isLight ? '☀️' : '🌙';
-  localStorage.setItem('anatom_theme', isLight ? 'light' : 'dark');
+  const current = localStorage.getItem('anatom_theme') || 'dark';
+  applyTheme(current === 'dark' ? 'light' : 'dark');
 }
 
 function initTheme() {
-  const saved = localStorage.getItem('anatom_theme');
-  if(saved === 'light') {
-    document.body.classList.add('light');
-    document.getElementById('theme-toggle').textContent = '☀️';
+  const saved = localStorage.getItem('anatom_theme') || 'dark';
+  const allClasses = ['light', 'theme-midnight','theme-forest','theme-rosegold','theme-cyber','theme-mocha','theme-slate','theme-aurora','theme-parchment','theme-ocean','theme-dracula','theme-solar','theme-nord','theme-gruvbox','theme-catppuccin','theme-tokyo','theme-amber','theme-sakura','theme-obsidian','theme-lavender','theme-custom'];
+  document.body.classList.remove(...allClasses);
+
+  if(saved === 'light') document.body.classList.add('light');
+  else if(saved === 'dark') { /* no class */ }
+  else document.body.classList.add(saved);
+
+  // Restore custom CSS if needed
+  if(saved === 'custom') {
+    const customCss = localStorage.getItem('anatom_custom_css') || '';
+    if(customCss) {
+      let styleEl = document.getElementById('custom-theme-style');
+      if(!styleEl) { styleEl = document.createElement('style'); styleEl.id = 'custom-theme-style'; document.head.appendChild(styleEl); }
+      styleEl.textContent = `body.theme-custom { ${customCss} }`;
+    }
   }
+
+  // Restore question font
+  const savedFont = localStorage.getItem('anatom_q_font') || 'Lora';
+  const fontDef = QUESTION_FONTS.find(f => f.id === savedFont);
+  if(fontDef) {
+    document.documentElement.style.setProperty('--q-font', `'${savedFont}', ${fontDef.cat === 'Mono' ? 'monospace' : fontDef.cat === 'Serif' ? 'serif' : 'sans-serif'}`);
+  }
+
+  // Topbar icon
+  const btn = document.getElementById('theme-toggle');
+  if(btn) btn.textContent = saved === 'light' ? '☀️' : saved === 'dark' ? '🌙' : '🎨';
 }
 
 // ============================================================
@@ -5111,9 +6188,16 @@ function closeDisclaimer() {
 // ============================================================
 // INIT
 // ============================================================
+let conceptualGaps = [];
+let editingGapId = null;
+let viewingGapId = null;
+
 loadData();
+loadGaps();
 initTheme();
 refreshDashboard();
+updateGapsBadge();
+updateStarredBadge();
 checkBackupReminder();
 populateMistakeSelectAndTestDropdowns();
 maybeShowDisclaimer();
@@ -5420,6 +6504,250 @@ async function runExportQuestion() {
     if(renderDiv) { renderDiv.style.display = 'none'; renderDiv.innerHTML = ''; }
   }
 }
+
+// ============================================================
+// CONCEPTUAL GAPS
+// ============================================================
+
+function loadGaps() {
+  try { conceptualGaps = JSON.parse(localStorage.getItem('anatom_gaps') || '[]'); } catch(e) { conceptualGaps = []; }
+}
+
+function saveGapsData() {
+  localStorage.setItem('anatom_gaps', JSON.stringify(conceptualGaps));
+  updateGapsBadge();
+}
+
+function updateGapsBadge() {
+  const badge = document.getElementById('gaps-badge');
+  if(badge) {
+    const n = conceptualGaps.length;
+    badge.textContent = n;
+    badge.style.display = n > 0 ? 'inline' : 'none';
+  }
+}
+
+function openGapModal(id) {
+  editingGapId = id || null;
+  const modal = document.getElementById('gap-modal-overlay');
+  const title = document.getElementById('gap-modal-title');
+  const saveBtn = document.getElementById('gap-save-btn');
+
+  // Init RTEs if not done
+  ['gap-q', 'gap-mistake', 'gap-exp'].forEach(prefix => {
+    const toolbar = document.getElementById(prefix + '-rte-toolbar');
+    const body = document.getElementById(prefix + '-rte-body');
+    if(toolbar && !toolbar.dataset.init) {
+      rteInitToolbar(toolbar, body);
+      toolbar.dataset.init = '1';
+      body.addEventListener('input', () => gapSyncPreview(prefix));
+    }
+  });
+
+  if(id) {
+    const gap = conceptualGaps.find(g => g.id === id);
+    if(!gap) return;
+    title.textContent = '✎ Edit Conceptual Gap';
+    saveBtn.textContent = 'Update Gap →';
+    rteSet('gap-q-rte-body', gap.question || '');
+    rteSet('gap-mistake-rte-body', gap.mistake || '');
+    rteSet('gap-exp-rte-body', gap.explanation || '');
+    document.getElementById('gap-subject').value = gap.subject || '';
+    document.getElementById('gap-chapter').value = gap.chapter || '';
+  } else {
+    title.textContent = '🧠 Add Conceptual Gap';
+    saveBtn.textContent = 'Save Gap →';
+    rteSet('gap-q-rte-body', '');
+    rteSet('gap-mistake-rte-body', '');
+    rteSet('gap-exp-rte-body', '');
+    document.getElementById('gap-subject').value = '';
+    document.getElementById('gap-chapter').value = '';
+  }
+  ['gap-q-render','gap-mistake-render','gap-exp-render'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) { el.textContent = 'Start typing to see preview...'; el.style.fontStyle = 'italic'; el.style.color = 'var(--text3)'; }
+  });
+
+  modal.classList.add('visible');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeGapModal() {
+  document.getElementById('gap-modal-overlay').classList.remove('visible');
+  document.body.style.overflow = '';
+  editingGapId = null;
+}
+
+function gapSyncPreview(prefix) {
+  const body = document.getElementById(prefix + '-rte-body');
+  const render = document.getElementById(prefix + '-render');
+  if(!body || !render) return;
+  const html = body.innerHTML.trim();
+  if(!html || html === '<br>') {
+    render.textContent = 'Start typing to see preview...';
+    render.style.fontStyle = 'italic';
+    render.style.color = 'var(--text3)';
+    return;
+  }
+  render.style.fontStyle = 'normal';
+  render.style.color = 'var(--text2)';
+  render.innerHTML = html;
+  if(window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([render]).catch(()=>{});
+  }
+}
+
+function saveGap() {
+  const q = rteGet('gap-q-rte-body');
+  const mistake = rteGet('gap-mistake-rte-body');
+  const explanation = rteGet('gap-exp-rte-body');
+  if(!q) { showToast('Please enter a concept/question.', 'error'); return; }
+  if(!mistake) { showToast('Please describe your mistake.', 'error'); return; }
+  if(!explanation) { showToast('Please write the correct explanation.', 'error'); return; }
+
+  const subject = document.getElementById('gap-subject').value;
+  const chapter = document.getElementById('gap-chapter').value.trim();
+
+  if(editingGapId) {
+    const idx = conceptualGaps.findIndex(g => g.id === editingGapId);
+    if(idx !== -1) {
+      conceptualGaps[idx] = { ...conceptualGaps[idx], question: q, mistake, explanation, subject, chapter };
+    }
+    showToast('Conceptual gap updated!');
+  } else {
+    conceptualGaps.push({
+      id: Date.now().toString(),
+      question: q, mistake, explanation, subject, chapter,
+      dateAdded: getTodayStr()
+    });
+    showToast('Conceptual gap saved!');
+  }
+  saveGapsData();
+  closeGapModal();
+  renderGapsPage();
+}
+
+function renderGapsPage() {
+  const search = (document.getElementById('gap-search')?.value || '').toLowerCase();
+  const subj = document.getElementById('gap-f-subject')?.value || '';
+  const sort = document.getElementById('gap-f-sort')?.value || 'newest';
+
+  let filtered = conceptualGaps.filter(g => {
+    if(subj && g.subject !== subj) return false;
+    if(search) {
+      const qt = (g.question||'').replace(/<[^>]*>/g,'').toLowerCase();
+      const mt = (g.mistake||'').replace(/<[^>]*>/g,'').toLowerCase();
+      const et = (g.explanation||'').replace(/<[^>]*>/g,'').toLowerCase();
+      const ct = (g.chapter||'').toLowerCase();
+      if(!qt.includes(search) && !mt.includes(search) && !et.includes(search) && !ct.includes(search)) return false;
+    }
+    return true;
+  });
+
+  if(sort === 'oldest') filtered.sort((a,b) => a.dateAdded?.localeCompare(b.dateAdded||''));
+  else if(sort === 'alpha') filtered.sort((a,b) => (a.question||'').replace(/<[^>]*>/g,'').localeCompare((b.question||'').replace(/<[^>]*>/g,'')));
+  else filtered.sort((a,b) => (b.id||'').localeCompare(a.id||''));
+
+  const countEl = document.getElementById('gaps-count');
+  if(countEl) countEl.textContent = filtered.length + ' gap' + (filtered.length !== 1 ? 's' : '') + ' found';
+
+  const listEl = document.getElementById('gaps-list');
+  if(!listEl) return;
+
+  if(filtered.length === 0) {
+    listEl.innerHTML = `<div class="empty-state">
+      <div class="empty-icon">🧠</div>
+      <div class="empty-title">No conceptual gaps yet</div>
+      <div class="empty-sub">Click "+ Add Conceptual Gap" to log a concept you misunderstood.</div>
+    </div>`;
+    return;
+  }
+
+  const subjColors = { Physics:'var(--phys)', Chemistry:'var(--chem)', Biology:'var(--bio)' };
+
+  listEl.innerHTML = filtered.map(g => {
+    const sc = subjColors[g.subject] || 'var(--gold)';
+    const qText = (g.question||'').replace(/<[^>]*>/g,'').replace(/[$\\{}^_]/g,'').slice(0,120);
+    const mistText = (g.mistake||'').replace(/<[^>]*>/g,'').slice(0,80);
+    return `<div class="q-card" onclick="openGapView('${g.id}')" style="cursor:pointer">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+            ${g.subject ? `<span style="padding:2px 9px;border-radius:20px;font-size:0.68rem;font-family:'JetBrains Mono',monospace;border:1px solid ${sc}55;background:${sc}18;color:${sc}">${g.subject}</span>` : ''}
+            ${g.chapter ? `<span style="padding:2px 9px;border-radius:20px;font-size:0.68rem;font-family:'JetBrains Mono',monospace;border:1px solid var(--border2);background:var(--surface2);color:var(--text3)">${g.chapter}</span>` : ''}
+            <span style="padding:2px 9px;border-radius:20px;font-size:0.68rem;font-family:'JetBrains Mono',monospace;border:1px solid rgba(90,138,224,0.35);background:var(--blue-dim);color:var(--blue)">Conceptual Gap</span>
+          </div>
+          <div style="font-size:0.95rem;color:var(--text);line-height:1.6;margin-bottom:8px;font-family:var(--q-font,'Cormorant Garamond',serif)">${qText}${qText.length>=120?'…':''}</div>
+          <div style="font-size:0.78rem;color:var(--red);background:var(--red-dim);border-radius:var(--radius2);padding:6px 10px;border:1px solid rgba(224,90,90,0.15);display:inline-block;max-width:100%">
+            ✗ ${mistText}${mistText.length>=80?'…':''}
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0">
+          <button onclick="event.stopPropagation();openGapModal('${g.id}')" class="btn btn-ghost" style="padding:5px 10px;font-size:0.75rem">✎ Edit</button>
+          <button onclick="event.stopPropagation();deleteGap('${g.id}')" class="btn btn-ghost" style="padding:5px 10px;font-size:0.75rem;color:var(--red);border-color:rgba(224,90,90,0.3)">✕</button>
+          <div style="font-size:0.65rem;color:var(--text3);font-family:'JetBrains Mono',monospace;white-space:nowrap">${g.dateAdded||''}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openGapView(id) {
+  const g = conceptualGaps.find(x => x.id === id);
+  if(!g) return;
+  viewingGapId = id;
+
+  const subjColors = { Physics:'var(--phys)', Chemistry:'var(--chem)', Biology:'var(--bio)' };
+  const sc = subjColors[g.subject] || 'var(--gold)';
+  document.getElementById('gapview-tags').innerHTML = `
+    ${g.subject ? `<span class="tag" style="border-color:${sc}55;background:${sc}18;color:${sc}">${g.subject}</span>` : ''}
+    ${g.chapter ? `<span class="tag" style="border-color:var(--border2);color:var(--text3)">${g.chapter}</span>` : ''}
+    <span class="tag" style="border-color:rgba(90,138,224,0.35);background:var(--blue-dim);color:var(--blue)">Conceptual Gap</span>
+    <span style="font-size:0.65rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-left:4px">${g.dateAdded||''}</span>
+  `;
+
+  document.getElementById('gapview-question').innerHTML = g.question || '—';
+  document.getElementById('gapview-mistake').innerHTML = g.mistake || '—';
+  document.getElementById('gapview-explanation').innerHTML = g.explanation || '—';
+  document.getElementById('gapview-delete-btn').setAttribute('data-id', id);
+
+  document.getElementById('gapview-overlay').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    const els = ['gapview-question','gapview-mistake','gapview-explanation'].map(i => document.getElementById(i)).filter(Boolean);
+    if(window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise(els).catch(()=>{});
+  }, 60);
+}
+
+function closeGapView() {
+  document.getElementById('gapview-overlay').classList.remove('visible');
+  document.body.style.overflow = '';
+  viewingGapId = null;
+}
+
+function handleGapViewOverlayClick(e) {
+  if(e.target === document.getElementById('gapview-overlay')) closeGapView();
+}
+
+function gapViewDelete() {
+  if(viewingGapId) { deleteGap(viewingGapId); closeGapView(); }
+}
+
+function gapViewEdit() {
+  const id = viewingGapId;
+  closeGapView();
+  openGapModal(id);
+}
+
+function deleteGap(id) {
+  if(!confirm('Delete this conceptual gap? This cannot be undone.')) return;
+  conceptualGaps = conceptualGaps.filter(g => g.id !== id);
+  saveGapsData();
+  renderGapsPage();
+  showToast('Conceptual gap deleted.');
+}
+
 </script>
 </body>
 </html>
